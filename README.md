@@ -10,3 +10,5 @@ Design and develop a responsive web page for your CV using multiple column layou
 - JQuery
 - Parcel Bundler
 - BootStrap
+
+# Deployed Site Link : 
