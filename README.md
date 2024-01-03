@@ -12,3 +12,6 @@ Design and develop a responsive web page for your CV using multiple column layou
 - BootStrap
 
 ### Deployed Site Link : https://adidemresume.netlify.app/
+----
+
+## Assigment No.2 : 
