@@ -23,3 +23,7 @@ Design and develop a website using toggleable or dynamic tabs or pills with boot
 - JQuery
 - Parcel Bundler
 - BootStrap
+
+### Deployed Site Link : https://adidemresume.netlify.app/
+----
+
