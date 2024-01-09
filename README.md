@@ -24,6 +24,6 @@ Design and develop a website using toggleable or dynamic tabs or pills with boot
 - Parcel Bundler
 - BootStrap
 
-### Deployed Site Link : https://adidemresume.netlify.app/
+### Deployed Site Link : https://dynamicselector.netlify.app/
 ----
 
