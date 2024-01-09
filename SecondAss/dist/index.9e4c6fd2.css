@@ -1,0 +1,11 @@
+.Container {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 40px auto auto;
+}
+
+body {
+  height: 750px;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

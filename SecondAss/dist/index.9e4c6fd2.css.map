@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAMA","sources":["index.css"],"sourcesContent":[".Container {\r\n    margin: auto;\r\n    width: fit-content;\r\n    margin-top: 40px;\r\n}\r\n\r\nbody{\r\n    height: 750px;\r\n}"],"names":[],"version":3,"file":"index.9e4c6fd2.css.map","sourceRoot":"/__parcel_source_root/"}
