@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynamicSelector</title>
+</head>
+<!-- This is Link for Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- This is End for Bootstrap Css -->
+<link rel="stylesheet" href="./index.css">
+
+<body>
+
+    <!-- This si Navbar  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dynamic Selector</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 30px;">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <button id="edi"
+                            style="font-weight: bold; color: black; font-size: 2rem;margin-top: 6px; background:none; border: none;">EDI</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="sdp"
+                            style="font-weight: bold; color: black; font-size: 2rem;margin-left: 20px; background:none; border: none;">SDP</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="cpbut"
+                            style="font-weight: bold; color: black; font-size: 2rem;margin-left: 20px; background:none; border: none;">CourseProject</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- This is End of Navbar  -->
+
+    <div class="Container">
+
+        <div class="card" style="width: 18rem;" id="homecard">
+            <img src="./Images/Welcome.png" height="125px" width="100px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">WELCOME to Dynamic Selector</h5>
+                <p class="card-text">Welcome to the dynamic hub of knowledge and innovation at VIT! Our website is designed to be your gateway to a world of cutting-edge subjects that empower you for the challenges of today and the opportunities of tomorrow.</p>
+            </div>
+        </div>
+
+
+
+        <div class="card" id="first" style="display: none; width: 25rem;">
+            <img src="./Images/Projects.png"  height="125px" width="100px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">EDI</h5>
+                <p class="card-text">Welcome to VIT's Engineering and Innovation Projects (EDI) – where hands-on learning meets groundbreaking solutions. Key Highlights: Project-Based Learning: Immerse yourself in real-world challenges, bridging theory and practice. Interdisciplinary Collaboration: Work with peers from diverse engineering disciplines for a holistic approach to problem-solving.</p>
+            </div>
+        </div>
+
+        <div class="card" id="second" style="display: none; width: 25rem;">
+            <img src="./Images/sdp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">SDP</h5>
+                <p class="card-text">Embark on a journey through the realm of Software Development Project, where theory meets practice to shape the digital landscape. Explore the intricacies of coding, algorithm design, and software architecture. Our SDT program equips you with the skills needed to craft robust, scalable, and innovative solutions in the ever-evolving world of technology.</p>
+            </div>
+        </div>
+
+        <div class="card" id="third" style="display: none; width: 25rem;">
+            <img src="./Images/cp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Course Project</h5>
+                <p class="card-text">Welcome to VIT's Course Projects (CP), where theory seamlessly transforms into practice through hands-on mini projects aligned with lab sessions. Dive into diverse projects spanning software development to electronic instrumentation, gaining practical exposure and enhancing your problem-solving skills. Collaborate with peers, benefit from faculty mentorship, and celebrate your achievements at the end-of-semester Project Showcase.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script>
+
+    let FirstDiv = document.querySelector("#first")
+    let SecondDiv = document.querySelector("#second")
+    let ThirdDiv = document.querySelector("#third")
+    let edibut = document.querySelector("#edi");
+    let sdpbut = document.querySelector("#sdp");
+    let cpbut = document.querySelector("#cpbut");
+
+    let homecard = document.querySelector("#homecard");
+
+    edibut.addEventListener("click", (e) => {
+        e.preventDefault();
+        homecard.style.display = "none";
+        ThirdDiv.style.display = "none";
+        SecondDiv.style.display = "none";
+        FirstDiv.style.display = "block";
+    });
+
+    sdpbut.addEventListener("click", (e) => {
+        e.preventDefault();
+        FirstDiv.style.display = "none";
+        homecard.style.display = "none";
+        ThirdDiv.style.display = "none";
+        SecondDiv.style.display = "block";
+    });
+
+
+    cpbut.addEventListener("click", (e) => {
+        e.preventDefault();
+        FirstDiv.style.display = "none";
+        homecard.style.display = "none";
+        ThirdDiv.style.display = "block";
+        SecondDiv.style.display = "none";
+    });
+
+
+</script>
+
+<!-- This is Bootstrap Js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!-- This is End of BootstrapJS -->
+
+</html>
