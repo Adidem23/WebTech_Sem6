@@ -1,0 +1,9 @@
+.Container {
+    margin: auto;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+body{
+    height: 750px;
+}
