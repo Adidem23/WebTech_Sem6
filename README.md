@@ -28,3 +28,11 @@ Design and develop a website using toggleable or dynamic tabs or pills with boot
 ----
 ## Assignment No.3 : 
 Design and develop a website to demonstrate (a) searching and sorting array for integer elements using JavaScript (b) array for named entities using JavaScript. You can make the use of bootstrap as well as jQuery.
+
+### Tech Stack Used : 
+- HTML
+- CSS
+- JQuery
+- Parcel Bundler
+- BootStrap
+
