@@ -35,3 +35,4 @@ Design and develop a website to demonstrate (a) searching and sorting array for 
 - JavaScript
 - Parcel Bundler
 
+## Deployed Site Link : https://thirdass.netlify.app/
