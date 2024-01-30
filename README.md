@@ -34,5 +34,4 @@ Design and develop a website to demonstrate (a) searching and sorting array for 
 - CSS
 - JavaScript
 - Parcel Bundler
-- BootStrap
 
