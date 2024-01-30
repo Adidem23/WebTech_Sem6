@@ -1,0 +1,116 @@
+.centerDiv{
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+.Heading{    
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Horizondiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.ListDiv{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: -40px;
+  justify-content: space-around;
+}
+
+.unlist{
+  display: block;
+  width: fit-content;
+  margin: auto;
+  color: black;
+  list-style: none;
+
+}
+
+.listitem{
+  margin-top: 10px;
+  font-size: 1.7rem;
+  border-radius: 20%;
+  color: white;
+  background-color: slateblue;
+  width: 60px;
+  text-align: center;
+}
+
+.listSubDiv{
+  width: fit-content;
+  height: fit-content;
+}
+
+.listSubDiv2{
+  margin-left: 50px;
+}
+
+/* This is Input Containers */
+.input {
+    width: 100%;
+    max-width: 220px;
+    height: 30px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input:active {
+    transform: scale(0.95);
+  }
+  
+  .input:focus {
+    border: 2px solid grey;
+  }
+/* This is End of Input Contaniers */
+
+/* This is Css For the Button  */
+button {
+    border: none;
+    color: #fff;
+    margin-left: 40px;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+/* This is End For the Button */

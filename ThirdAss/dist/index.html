@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThirdAss</title>
+</head>
+<link rel="stylesheet" href="/index.9e4c6fd2.css">
+
+<body>
+
+    <div class="centerDiv">
+
+        <h1 class="Heading">Sort Numbers</h1>
+
+        <div class="Horizondiv">
+            <input placeholder="Enter Number" type="number" name="text" id="inputnumber" class="input">
+            <button id="but" onclick="addElement()">Enter</button>
+            <button id="SortBut" onclick="sortNumbers()">Sort</button>
+        </div>
+
+        <div class="ListDiv">
+
+            <div class="listSubDiv">
+                <h3 class="Heading">Unsorted List</h3>
+
+                <ul class="unlist" id="list">
+
+                </ul>
+            </div>
+
+            <div class="listSubDiv2">
+                <h3 class="Heading">Sorted List</h3>
+                <ul class="unlist" id="SortedList">
+
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+<script src="/ThirdAss.3464ddca.js"></script></body>
+<script>const inputnumber = document.getElementById("inputnumber");
+const unsortedlist = document.getElementById("list");
+const Sortedlist = document.getElementById("SortedList");
+const unsortednumberArray = [];
+function addElement() {
+    let NewNode = document.createElement("li");
+    NewNode.innerHTML = inputnumber.value;
+    NewNode.setAttribute("class", "listitem");
+    unsortednumberArray.push(Number(inputnumber.value));
+    unsortedlist.appendChild(NewNode);
+    inputnumber.value = "";
+}
+function sortNumbers() {
+    unsortednumberArray.sort(function(a, b) {
+        return a - b;
+    });
+    Sortedlist.innerHTML = "";
+    for(let index = 0; index < unsortednumberArray.length; index++){
+        let NewNode = document.createElement("li");
+        NewNode.innerHTML = unsortednumberArray[index];
+        NewNode.setAttribute("class", "listitem");
+        Sortedlist.appendChild(NewNode);
+    }
+}
+
+</script>
+</html>
