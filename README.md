@@ -32,7 +32,7 @@ Design and develop a website to demonstrate (a) searching and sorting array for 
 ### Tech Stack Used : 
 - HTML
 - CSS
-- JQuery
+- JavaScript
 - Parcel Bundler
 - BootStrap
 
