@@ -1,0 +1,14 @@
+.MainDiv {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 40px;
+  }
+  
+  #Butdiv{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    border:3px solid red ;
+  }
+  
