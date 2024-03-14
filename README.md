@@ -40,3 +40,6 @@ Design and develop a website to demonstrate (a) searching and sorting array for 
 ## Assignment No.4 : 
 
 Design and develop a responsive website to calculate Electricity bill using Django/Springboot/Node JS/ PHP. Condition for first 50 units – Rs. 3.50/unit, for next 100 units – Rs. 4.00/unit, for next 100 units – Rs. 5.20/unit and for units above 250 – Rs. 6.50/unit. You can make the use of bootstrap as well as jQuery
+
+# Tech Stack Used : 
+- 
